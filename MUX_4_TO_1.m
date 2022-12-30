@@ -1,0 +1,5 @@
+function MUX4TO1 = MUX_4_TO_1(S1,S0,D0,D1,D2,D3)
+o1=MUX_2_TO_1(S0,D1,D0);
+o2=MUX_2_TO_1(S0,D3,D2);
+MUX4TO1=MUX_2_TO_1(S1,o2,o1)
+end
